@@ -74,6 +74,13 @@ git pull
 git pull origin MA_BRANCH
 ```
 
+## Crée la branch locale sur GITHUB
+```shell
+git push --set-upstream origin nom_de_la_branch
+# Ou
+git push -u origin nom_de_la_branch
+```
+
 ## Envoyer ses commits vers GITHUB
 
 ```shell
@@ -84,4 +91,16 @@ git push
 
 ```shell
 git push origin MA_BRANCH
+```
+
+## Fusionner une branch avec master
+
+```shell
+# On vient ce placer sur Master
+git checkout master
+# On vient fusionner les fichier (merge)
+git merge nom_de_la_branch
+# On vient push la fusion des deux 
+git push
+
 ```
